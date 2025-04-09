@@ -1,0 +1,12 @@
+
+r	java:S106"+Replace this use of System.out by a logger.(á©¯úÿÿÿÿ8¥•¶äÉ2J$68d0de6a-28eb-47e1-817f-44d9e78dcc19
+ƒ	java:S125"<This block of commented-out lines of code should be removed.(²‚ûùÿÿÿÿ8¦•¶äÉ2J$6c17a00d-c08b-47a2-a85f-b73c1e46de54
+r	java:S106"+Replace this use of System.out by a logger.(ìğú”şÿÿÿÿ8§•¶äÉ2J$242d85a5-7797-43cb-996b-c6e18e2963e3
+`
+java:S2119"Save and re-use this "Random".(¼İÅf8«•¶äÉ2J$93c5b6d7-9da3-483e-b523-a626915ede4e
+m	java:S106#"+Replace this use of System.out by a logger.(¥ôÄ8­•¶äÉ2J$99bb43de-de3c-41a1-9b63-9ee5cc7ea8d9
+m	java:S106/"+Replace this use of System.out by a logger.(²ˆÖ¿8®•¶äÉ2J$a0e74da3-a152-4720-8e3e-354dad63ac57
+`
+java:S2119E"Save and re-use this "Random".(¼İÅf8°•¶äÉ2J$bd168a03-ac04-4fb7-a13d-85090e9daa8a
+œ
+java:S3012k"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(ù¥«8²•¶äÉ2J$b5b679d2-537b-480f-9c26-0dff091726a0

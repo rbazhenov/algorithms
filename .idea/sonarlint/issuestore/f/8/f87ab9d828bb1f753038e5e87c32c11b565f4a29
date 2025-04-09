@@ -1,0 +1,6 @@
+
+	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ã‘™¥8êû…ÅÓ2J$0fab5d8b-d1c3-43e9-893b-b27996e00f0d
+˜
+java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(û›şöıÿÿÿÿ8öû…ÅÓ2J$48df0cc4-d471-48b3-afb6-b596a1d21d68
+r	java:S106"+Replace this use of System.out by a logger.(óŠÕÎÿÿÿÿÿ8üû…ÅÓ2J$87bbdffd-3d0e-409f-b1ca-583ed437885a
+m	java:S106""+Replace this use of System.out by a logger.(ÊØ¡Œ8³³ŒÅÓ2J$4b8a38eb-1f53-49ea-b376-5d9a46885c02

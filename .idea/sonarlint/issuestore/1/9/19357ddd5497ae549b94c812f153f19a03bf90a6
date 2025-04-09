@@ -1,0 +1,6 @@
+
+”	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(æÚéóıÿÿÿÿ8•ğıÄ½2J$810623a6-f113-43df-98f0-0e6320f97b44
+‹
+java:S3824*"HReplace this "Map.containsKey()" with a call to "Map.computeIfAbsent()".(˜¢¡¿8œğıÄ½2J$6ec4cbb3-5fe0-478d-b146-92b78421c886
+l	java:S106"+Replace this use of System.out by a logger.(×ÜH8ŸğıÄ½2J$fb356d14-83b8-4f57-994a-1d81a3e5008c
+r	java:S106"+Replace this use of System.out by a logger.(®Ş¢ãüÿÿÿÿ8ŸğıÄ½2J$7c43dcae-87c4-4d0a-b8a2-6e3eecde466e

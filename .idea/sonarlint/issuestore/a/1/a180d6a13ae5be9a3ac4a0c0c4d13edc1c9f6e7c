@@ -1,0 +1,19 @@
+
+
+java:S1192"FDefine a constant instead of duplicating this literal "error" 4 times.(Î¸»ıÿÿÿÿ8¡Ì¹”Ô2J$292bd24a-8f90-46a0-8519-a8579a54f89e
+	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¸©ö´8£Ì¹”Ô2J$19de13d0-221d-4b33-880b-eba1f414bb67
+•
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(Çµí‘8—Î¹”Ô2J$51bbb655-dccf-417b-b4a4-3510cf4134af
+m	java:S106"+Replace this use of System.out by a logger.(¨Ô…‹8œÎ¹”Ô2J$93744d5b-a19e-441a-a395-eaa25bd3d7b6
+m	java:S106"+Replace this use of System.out by a logger.(¨Ô…‹8œÎ¹”Ô2J$9ccb52b8-9660-4718-adb5-46bc1de80437
+r	java:S106"+Replace this use of System.out by a logger.(Î¸»ıÿÿÿÿ8œÎ¹”Ô2J$da874865-944d-4a8b-8bc1-73f47aebb946
+m	java:S106"+Replace this use of System.out by a logger.(ç¢ÔÇ8Î¹”Ô2J$82ad8311-2ac1-4a9a-8cb0-b14f3af2946d
+m	java:S106"+Replace this use of System.out by a logger.(¶ë¶´8Î¹”Ô2J$39fd6a64-2c4a-4be1-afec-b8ae3ba32884
+r	java:S106 "+Replace this use of System.out by a logger.(Ş–²Õÿÿÿÿÿ8Î¹”Ô2J$8a14edd4-a60a-4477-bf7c-de07e6ff1481
+r	java:S106""+Replace this use of System.out by a logger.(Í–ÃÛıÿÿÿÿ8Î¹”Ô2J$4035d7da-8a33-4e40-96bb-0437e0a0db2f
+m	java:S106%"+Replace this use of System.out by a logger.(¨Ô…‹8Î¹”Ô2J$8c537ece-46e8-473b-88d6-46bfc5343922
+m	java:S106+"+Replace this use of System.out by a logger.(•›…8Î¹”Ô2J$0a3e8a54-0c50-457a-8644-75c570adc637
+	java:S1007"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ıŒ¿ò8 Î¹”Ô2J$2d405d33-08ee-4638-a1df-51feefa3ac17
+	java:S100C"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–ãÈ8»¾”Ô2J$ef30d1c5-7b3d-4a1a-875b-5dd405b02d0b
+	java:S100O"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(å•ÑÒ8»¾”Ô2J$153ec4e6-edcb-4c63-abde-54861d81f275
+•	java:S100Y"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œª‰çüÿÿÿÿ8»¾”Ô2J$54e3d1bd-72f2-4ffe-8a4d-02725aab36b1

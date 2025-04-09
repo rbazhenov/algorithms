@@ -1,0 +1,11 @@
+
+˜
+java:S1104	"UMake openTypes a static final constant or non-public and provide accessors if needed.(²Šü‰8ÅíÑÁÓ2J$503a8837-8b23-4a48-81ac-48fe29856b2b
+r
+java:S1444	"/Make this "public static openTypes" field final(²Šü‰8ÆíÑÁÓ2J$71e4ac7b-6589-46d7-a7ac-edb7e9344c79
+	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÂÜ€¬8ÇíÑÁÓ2J$fc120970-8f6e-467f-bc36-eb920f2f090b
+˜
+java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ÑÖÙƒıÿÿÿÿ8äîÑÁÓ2J$3ec85e55-3942-4111-9b50-8e5a21ff1bc0
+“
+java:S1149/"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ÆĞÛğ8äîÑÁÓ2J$0292f16f-00fd-4d0e-900c-2618ddcae612
+r	java:S106"+Replace this use of System.out by a logger.(ËÊ¸¤üÿÿÿÿ8ìîÑÁÓ2J$1ac77f8e-d9a0-4525-a066-a7e79c91c93e

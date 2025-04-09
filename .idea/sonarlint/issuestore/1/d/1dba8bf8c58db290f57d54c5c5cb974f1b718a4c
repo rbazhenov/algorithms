@@ -1,0 +1,12 @@
+
+˜
+java:S1488'"\Immediately return this expression instead of assigning it to the temporary variable "root".(ïîŒ‚J$2b0fb79d-bf2f-4b95-932a-fa92f5d2918f
+‡	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Æ®©bJ$715220f4-fbca-4c40-9915-6ef1d41ece17
+Y
+java:S4973"<Strings and Boxed types should be compared using "equals()".(­ì‰¶8·ø³ Ú2
+|	java:S125	"<This block of commented-out lines of code should be removed.(™ùü€þÿÿÿÿJ$ca67505d-31c9-4187-8acf-9b73c0842cd4
+|	java:S125"<This block of commented-out lines of code should be removed.(žŸ˜£þÿÿÿÿJ$7915e3df-5792-4ee3-a0da-e3b0493bf5f4
+f	java:S106"+Replace this use of System.out by a logger.(’ÄÁúJ$0bd28048-eb46-4195-b26d-5cf6acf98321
+¥
+java:S2234!"]Parameters to isSymmetric have the same names but not the same order as the method arguments.(™ð‚úùÿÿÿÿ8öðÈªÃ2J$1cddd0c9-6daa-4680-9821-7c98c052d8cc
+|	java:S125)"<This block of commented-out lines of code should be removed.(•ï©õûÿÿÿÿJ$4e1d5ad1-7157-46a3-a84c-c59ad459a2b5

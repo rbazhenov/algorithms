@@ -1,0 +1,134 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+function loadjscss(f,t){
+    if (t=="js"){
+        var fref=document.createElement('script');
+        fref.setAttribute("type","text/javascript");
+        fref.setAttribute("src", f);
+    }else{
+        var fref=document.createElement("link");
+        fref.setAttribute("rel", "stylesheet");
+        fref.setAttribute("type", "text/css");
+        fref.setAttribute("href", f);
+    }
+    document.getElementsByTagName('head')[0].appendChild(fref);
+}
+function oef() {
+    $("a[href^='/Gs/']").each(function() {
+        $(this).attr('href', 'http://'+$(this).attr('href').substr(3));
+    });
+}
+
+
+var rtb_index = 0;
+
+function rtbInit( rtbBlocks ) {
+
+    var w = window;
+    var n = "yandexContextAsyncCallbacks";
+
+    rtbBlocks.each(function () {
+
+        var b = $(this);
+
+        if (!b.attr('id')) {
+            b.attr('id', "yandex_rtb_" + rtb_index);
+
+            rtb_index++;
+
+            var pageNumber = rtb_index;
+
+
+            var rtb = b.data('rtb');
+            w[n] = w[n] || [];
+            w[n].push(function() {
+                Ya.Context.AdvManager.render( { blockId: rtb, renderTo: b.attr('id'), pageNumber: pageNumber, async: true } );
+            });
+        }
+    });
+
+    if (w[n]) {
+        var t = document.getElementsByTagName("script")[0];
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.src = "http://an.yandex.ru/system/context.js";
+        s.async = true;
+        t.parentNode.insertBefore(s, t);
+
+    }
+
+
+}
+
+$(function() {
+
+
+    oef();
+
+    //$('<div data-rtb="R-A-285967-2"></div>').insertBefore( $('h2') );
+    $('<div data-rtb="R-A-285967-2"></div>').insertBefore( $('h3:nth-child(3n+3),h2') );
+
+    var rtbBlocks = $('[data-rtb]');
+    if (rtbBlocks.length) {
+        rtbInit(rtbBlocks);
+    }
+
+    $(document).on('submit', 'form.ajax_form', function() {
+        $.post(
+            $(this).attr('action'),
+            $(this).serialize(),
+            function(rs) {
+                if (rs.msg) {
+                    alert(rs.msg);
+                }
+
+                if (rs.error) {
+                    alert(rs.error);
+                    return!1;
+                }
+
+                if (rs.link) {
+                    window.location.href=rs.link;
+                }
+            }, 'json'
+        );
+        return!1;
+    });
+
+    if (!is_dev) {
+        // if ( (window.adsbygoogle||[]).length>0) {
+        //     loadjscss("http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", 'js');
+        // }
+    }
+
+    if (typeof onload_fn != 'undefined') {
+        for(var i = 0; i<onload_fn.length; i++) {
+            onload_fn[i]();
+        }
+    }
+
+    if (!is_dev) {
+        (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter32076741 = new Ya.Metrika({ id:32076741, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "http:" ? "http:" : "http:") + "http://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");
+    }
+
+    $('pre code').each(function(i, block) {
+        hljs.highlightBlock(block);
+    });
+
+});
+
+}
+/*
+     */
+/*
+*/

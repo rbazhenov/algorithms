@@ -1,0 +1,15 @@
+
+¤
+java:S1488T"\Immediately return this expression instead of assigning it to the temporary variable "size".(º‰¦×şÿÿÿÿ8¾›œ‘Ô2J$848a412e-9085-4df2-b876-543123be7f5a
+	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(‰âô8Ú„‰‘Ô2J$b7072585-41b2-414e-b9a7-679b2549495f
+m	java:S106"+Replace this use of System.out by a logger.(–İÅ8´…‰‘Ô2J$ebeffd06-72b9-47ae-a0a7-d34e1eda0292
+m	java:S106"+Replace this use of System.out by a logger.(¨Ô…‹8¶…‰‘Ô2J$90970191-21f3-498a-af21-0216ad298e15
+m	java:S106 "+Replace this use of System.out by a logger.(•›…8Îö‘Ô2J$1525fdbf-8ede-4d88-a91e-0e61fc8cd727
+—
+java:S1845C"ORename method "front" to prevent any misunderstanding/clash with field "front".(é÷¶©ÿÿÿÿÿ8Ìö‘Ô2J$3cbf1c74-19b3-41f7-97ca-4f8e201c3644
+m	java:S1060"+Replace this use of System.out by a logger.(¨Ô…‹8Ïö‘Ô2J$f29de8a5-f333-468b-b4da-c3aad88d0897
+m	java:S1065"+Replace this use of System.out by a logger.(öØÈ¢8Ïö‘Ô2J$c8d0161a-6e26-4537-af3f-8e96a2530fd6
+m	java:S106:"+Replace this use of System.out by a logger.(£ÃÁÙ8Ğö‘Ô2J$10edc0c9-b856-49da-9c45-01f8666b3fbb
+m	java:S106E"+Replace this use of System.out by a logger.(öØÈ¢8Ğö‘Ô2J$88fc53c5-63ad-46a2-9bf4-29986db49622
+m	java:S106J"+Replace this use of System.out by a logger.(£ÃÁÙ8Ğö‘Ô2J$7b680a7f-2389-4367-8b2f-8556425a101c
+r	java:S106P"+Replace this use of System.out by a logger.(óŠÕÎÿÿÿÿÿ8Œìœ‘Ô2J$ce0fc172-7646-4551-af44-116e18375bf0

@@ -1,0 +1,18 @@
+
+m	java:S106
+"+Replace this use of System.out by a logger.(†Ò›8¤Í›Ÿ2J$70a74bce-8ef3-4899-973d-58fc53393c20
+r	java:S106"+Replace this use of System.out by a logger.(Í©Ò·şÿÿÿÿ8¥Í›Ÿ2J$67dc26b9-6077-4fd6-aa18-d6f6ca329160
+r	java:S106"+Replace this use of System.out by a logger.(Ç¤Øøüÿÿÿÿ8ƒ Ÿ2J$2f9b2253-14a5-4677-b129-ebb9c3923cfe
+q
+java:S5413")Verify that "remove()" is used correctly.(Òã²‚ùÿÿÿÿ8«Í›Ÿ2J$a2c9d305-81e3-4bd2-a50b-cb7bca040d45
+~	java:S125 "<This block of commented-out lines of code should be removed.(ÀÊ²±8–úÁ¯¡2J$e54bee6c-20fa-41ca-83f3-6b433bbae1c3
+•	java:S100."NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ê±âŞıÿÿÿÿ8®Í›Ÿ2J$e8703b9d-5aa0-4f7f-9afe-7cdc30a23582
+	java:S100<"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©ÕŸÒ8ïÊÂ¯¡2J$d38c36fb-de8d-4ff7-b657-e6b5a8e342f9
+r	java:S106="+Replace this use of System.out by a logger.(œæ§üÿÿÿÿ8¾Ã¦Ÿ2J$42a2a3eb-f48a-465e-ad32-0c19c3bcf201
+	java:S100M"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óë¨8ûÏ£Ÿ2J$810854b0-c870-46b1-8e52-de2efd067221
+u
+java:S1135N"2Complete the task associated to this TODO comment.(–ìäˆ8Í¦Ÿ2J$69b310f3-1f06-4e36-bf5e-a599b47e846e
+•	java:S100R"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ïİïúÿÿÿÿ8°³Ã¯¡2J$f7dab120-0e86-46f0-8bc7-5bc1eee3cd82
+r	java:S106S"+Replace this use of System.out by a logger.(œæ§üÿÿÿÿ8±³Ã¯¡2J$3642016a-4ee6-4239-a4b4-aba66e58a016
+u
+java:S1135T"2Complete the task associated to this TODO comment.(–ìäˆ8²³Ã¯¡2J$25c59407-b6c9-433e-b13e-d9409927195c

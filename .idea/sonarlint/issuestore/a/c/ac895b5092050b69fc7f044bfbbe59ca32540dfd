@@ -1,0 +1,8 @@
+
+d
+java:S16435"Use a StringBuilder instead.(õîú…øÿÿÿÿ8›í³Ì¼2J$6502ebb6-9fb6-486c-a138-0a6d4383d133
+”	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¬„Àÿÿÿÿÿ8í³Ì¼2J$6dab07d2-42c7-4aad-8eff-a03f8e13cc49
+ƒ	java:S125"<This block of commented-out lines of code should be removed.(ˆ¦éúÿÿÿÿ8÷í³Ì¼2J$086e2712-9568-4339-95d2-89f9e7e290ab
+m	java:S106"+Replace this use of System.out by a logger.(ïÅØ—8øí³Ì¼2J$0a87f837-ab9e-411a-ba67-c7201eacafb4
+š
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(„â·°ùÿÿÿÿ8øí³Ì¼2J$c9e71a99-36a9-4bf1-a185-caedf1cc049e

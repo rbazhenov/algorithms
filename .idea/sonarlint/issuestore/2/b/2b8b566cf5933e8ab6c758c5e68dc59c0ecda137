@@ -1,0 +1,10 @@
+
+†
+java:S1854"CRemove this useless assignment to local variable "rootSecondChild".(¥¼—¸8„óƒ¢2J$adc3bb88-866e-4fc8-ad4e-c8d398b9696c
+„
+java:S1854"BRemove this useless assignment to local variable "depthMostChild".(É»¦$8„óƒ¢2J$23f350e2-45d0-45da-9335-35fcee51df47
+u
+java:S1481"3Remove this unused "depthMostChild" local variable.(É»¦$8†óƒ¢2J$3d074e61-4a9d-4f4f-bf98-0df2a669c18c
+w
+java:S1481"4Remove this unused "rootSecondChild" local variable.(¥¼—¸8†óƒ¢2J$3b90fe5a-9111-463f-8990-0a38a2c969d3
+m	java:S106"+Replace this use of System.out by a logger.(ÖıÓê8‰óƒ¢2J$3b6a2114-87b9-4470-a11c-603a1ba713f6

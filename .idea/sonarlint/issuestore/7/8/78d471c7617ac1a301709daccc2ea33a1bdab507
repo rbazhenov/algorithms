@@ -1,0 +1,12 @@
+
+è	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(„Ê∞≥8›®≠°⁄2J$5a09a8c0-9bbf-445b-a056-71c9cf6bef47
+ì
+java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ä»›‡8Ò®≠°⁄2J$3bbbfb09-aa3b-47c0-860d-7977ba8189ce
+É	java:S125	"<This block of commented-out lines of code should be removed.(É˝π±˝ˇˇˇˇ8Ú®≠°⁄2J$7adbaa2f-b07a-4ce4-98ea-00058312b772
+m	java:S106"+Replace this use of System.out by a logger.(˝„áù8Û®≠°⁄2J$b0b2f8fd-cf5a-49ca-8444-9debd5f65a5e
+•
+java:S2234;"]Parameters to isSymmetric have the same names but not the same order as the method arguments.(ıÜÅˆ˘ˇˇˇˇ8˜®≠°⁄2J$31d73297-05a0-4d3a-9392-11f1f57b5ecf
+s
+java:S1128"1Remove this unused import 'java.util.LinkedList'.(ªƒ18¯®≠°⁄2J$73800181-ac21-467f-b4ac-b063b2c1bec5
+o
+java:S1128",Remove this unused import 'java.util.Queue'.(ƒ·ôÙ8¯®≠°⁄2J$a2fa56eb-ab83-490c-9f55-d3f9ef25ea1c

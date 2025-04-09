@@ -1,0 +1,19 @@
+
+”
+java:S1192#"QDefine a constant instead of duplicating this literal "No value present" 4 times.(Æ±¬Ÿ8ü…òŸ2J$b74e952c-70ab-4f52-9f1f-8c99f2516644
+m	java:S106"+Replace this use of System.out by a logger.(Î¶Á®8¥†òŸ2J$b04e2535-8d83-4e31-b177-5b69d544b0e0
+r	java:S106"+Replace this use of System.out by a logger.(Ë¹ª”úÿÿÿÿ8¥†òŸ2J$6b778507-07e0-46a6-b34d-95f3843dc4ab
+r	java:S106	"+Replace this use of System.out by a logger.(»ÃŠëÿÿÿÿÿ8¨†òŸ2J$7b967afd-a253-4559-8cf0-476b75bd7648
+ƒ	java:S125
+"<This block of commented-out lines of code should be removed.(àÛÑìøÿÿÿÿ8ª†òŸ2J$aacc84a0-3232-4e08-9798-cc069048ec8f
+	java:S100&"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šÆÌõ8¯†òŸ2J$473d6b00-6f8c-4fc2-ae1a-d7d770f1d858
+	java:S100?"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿÏçp8±†òŸ2J$183cedca-aa88-4937-887b-3be500cc4607
+•	java:S100X"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”Ì·üÿÿÿÿ8µ†òŸ2J$0a978a6f-f279-42f0-8fe8-4742e10092b9
+~
+java:S1172X"6Remove these unused method parameters "array", "item".(”Ì·üÿÿÿÿ8¶†òŸ2J$b07ff848-3871-48f2-b547-2f31b06d90dd
+z
+java:S1135Y"2Complete the task associated to this TODO comment.(‘ûŠñùÿÿÿÿ8¶†òŸ2J$f688a116-e47d-469d-9e5a-53cc1ae4dee1
+z
+java:S1135["2Complete the task associated to this TODO comment.(ÛßæÍıÿÿÿÿ8¶†òŸ2J$9d686694-66dc-4825-91f2-7729e966d471
+}
+java:S1144X"5Remove this unused private "calcGuessIndex_4" method.(”Ì·üÿÿÿÿ8·†òŸ2J$850610b7-2c07-4c59-8c62-9057ed4fb995
