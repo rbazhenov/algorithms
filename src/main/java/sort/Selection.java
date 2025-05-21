@@ -14,8 +14,7 @@ public class Selection {
 
     public static int[] selectionSort(Integer[] inputArr) {
         //big O(log N^2)
-        List<Integer> list = new ArrayList<>();
-        list.addAll(Arrays.asList(inputArr));
+        List<Integer> list = new ArrayList<>(Arrays.asList(inputArr));
         int size = list.size();
 
         int[] newArr = new int[size];

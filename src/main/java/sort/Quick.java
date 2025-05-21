@@ -118,4 +118,43 @@ public class Quick {
 
         return arr;
     }
+
+    public static List<Integer> quickSort_r(List<Integer> arr) {
+        int arrLen = arr.size();
+        if (arrLen < 2) {
+            return arr;
+        }
+
+        if (arrLen == 2) {
+            Integer a = arr.get(0);
+            Integer b = arr.get(1);
+            arr.set(0, Math.min(a, b));
+            arr.set(1, Math.max(a, b));
+            return arr;
+        }
+
+        int randIndx = new Random().nextInt(arrLen - 1);
+        List<Integer> left = new ArrayList<>();
+        List<Integer> right = new ArrayList<>();
+        List<Integer> equal = new ArrayList<>();
+        Integer pivot = arr.get(randIndx);
+
+        for (int i = 0; i < arrLen; i++) {
+            Integer cur = arr.get(i);
+            if (cur < pivot) {
+                left.add(cur);
+            } else if (cur > pivot) {
+                right.add(cur);
+            } else {
+                equal.add(cur);
+            }
+        }
+
+        List<Integer> sorted = new ArrayList<>();
+        sorted.addAll(quickSort_r(left));
+        sorted.addAll(equal);
+        sorted.addAll(quickSort_r(right));
+
+        return sorted;
+    }
 }

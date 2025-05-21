@@ -27,11 +27,10 @@ public class BreadthFirstWithGraph {
         Queue<Node<T>> queue = new ArrayDeque<>();
         queue.add(start);
 
-        Node<T> currentNode;
         Set<Node<T>> visited = new HashSet<>();
 
         while (!queue.isEmpty()) {
-            currentNode = queue.remove();
+            Node<T> currentNode = queue.remove();
             System.out.println("Visited node with value: " + currentNode.getValue());
             if (currentNode.getValue().equals(value)) {
                 return Optional.of(currentNode);

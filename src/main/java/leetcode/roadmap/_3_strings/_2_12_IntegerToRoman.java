@@ -16,10 +16,10 @@ public class _2_12_IntegerToRoman {
 
         StringBuilder ans = new StringBuilder();
         for (int i = 0; i < val.length; i++) {
-            if (num==0){
+            if (num == 0) {
                 break;
             }
-            while (num>=val[i]){
+            while (num >= val[i]) {
                 ans.append(rom[i]);
                 num -= val[i];
             }

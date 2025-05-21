@@ -21,6 +21,14 @@
             <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
+
+        <!--Java Concurrency Stress-->
+        <dependency>
+            <groupId>org.openjdk.jcstress</groupId>
+            <artifactId>jcstress-core</artifactId>
+            <version>0.3</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
 </project>

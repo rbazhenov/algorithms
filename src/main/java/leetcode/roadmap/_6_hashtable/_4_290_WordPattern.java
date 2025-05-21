@@ -7,7 +7,7 @@ import java.util.Set;
 
 public class _4_290_WordPattern {
     public static void main(String[] args) {
-        String pattern = "aaaa";
+        String pattern = "abba";
         String s = "dog cat cat dog";
         System.out.println(wordPattern(pattern, s));
     }
