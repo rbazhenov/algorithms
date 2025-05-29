@@ -1,23 +1,13 @@
-package concurrency;
+package interview.sber;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class SberTask {
+public class ConcurrentAnswer {
 
     public static void main(String[] args) throws InterruptedException {
-        AtomicInteger i = null;
-        Thread thread1 = new Thread() {
-            @Override
-            public void run() {
-                increase(i);
-            }
-        };
-        Thread thread2 = new Thread() {
-            @Override
-            public void run() {
-                print(i);
-            }
-        };
+        AtomicInteger i = new AtomicInteger(0);
+        Thread thread1 = new Thread(() -> increase(i));
+        Thread thread2 = new Thread(() -> print(i));
 
         thread1.start();
         thread2.start();
