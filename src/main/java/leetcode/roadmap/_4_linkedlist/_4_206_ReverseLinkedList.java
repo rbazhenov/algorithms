@@ -17,10 +17,9 @@ public class _4_206_ReverseLinkedList {
 
         ListNode prev = null;
         ListNode current = head;
-        ListNode next = null;
 
         while (current != null) {
-            next = current.next;
+            ListNode next = current.next;
             current.next = prev;
             prev = current;
             current = next;

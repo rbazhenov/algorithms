@@ -18,6 +18,18 @@ public class TreeNode {
         this.right = right;
     }
 
+    public int getVal() {
+        return val;
+    }
+
+    public TreeNode getLeft() {
+        return left;
+    }
+
+    public TreeNode getRight() {
+        return right;
+    }
+
     public static TreeNode arrayToTree(Integer array[]) {
         return arrayToTree(array, 0);
     }
