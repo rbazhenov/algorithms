@@ -5,7 +5,7 @@ import java.util.concurrent.RecursiveTask;
 
 public class ValueSumCounter extends RecursiveTask<Integer> {
 
-    private int[] array;
+    private final int[] array;
 
     public ValueSumCounter(int[] array) {
         this.array = array;

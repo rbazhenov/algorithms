@@ -12,9 +12,26 @@ import java.util.Map;
 public class _169_MajorityElement {
 
     public static void main(String[] args) {
-        int[] arr = new int[] {2,2,1,1,1,2,2};
-        System.out.println(majorityElement(arr));
+        int[] arr = new int[]{2, 2, 1, 1, 1, 2, 2};
+        System.out.println(majorityElementBest(arr));
 //        System.out.println(sortFirst(arr));
+    }
+
+    public static int majorityElementBest(int[] nums) {
+        int candidate = 0;
+        int count = 0;
+        for (int num : nums) {
+            if (count == 0) {
+                candidate = num;
+            }
+            if (num == candidate) {
+                count++;
+            } else {
+                count--;
+            }
+        }
+
+        return candidate;
     }
 
     //my bad
@@ -26,7 +43,7 @@ public class _169_MajorityElement {
 
 //        return Collections.max(map.entrySet(), Map.Entry.comparingByValue()).getKey();
         for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
-            if (entry.getValue() > nums.length/2) {
+            if (entry.getValue() > nums.length / 2) {
                 return entry.getKey();
             }
         }
@@ -36,6 +53,6 @@ public class _169_MajorityElement {
 
     public static int sortFirst(int[] nums) {
         Arrays.sort(nums);
-        return nums[nums.length/2];
+        return nums[nums.length / 2];
     }
 }

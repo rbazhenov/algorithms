@@ -13,7 +13,6 @@ public class _4_290_WordPattern {
     }
 
     public static boolean wordPattern(String pattern, String s) {
-        Map<Character, String> dict = new HashMap<>();
         s = s.trim();
         String[] split = s.split(" ");
 
@@ -22,6 +21,7 @@ public class _4_290_WordPattern {
         }
 
         Set<String> words = new HashSet<>();
+        Map<Character, String> dict = new HashMap<>();
         for (int i = 0; i < pattern.length(); i++) {
             char key = pattern.charAt(i);
             String word = split[i];

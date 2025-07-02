@@ -3,7 +3,9 @@ package sorokin;
 import jakarta.annotation.Nonnull;
 import lombok.Data;
 
-import java.util.*;
+import java.util.List;
+import java.util.Map;
+import java.util.Queue;
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.stream.Collectors;
 
@@ -12,7 +14,8 @@ import java.util.stream.Collectors;
  */
 public class _6_UserOperationLimiter {
 
-    private final Map<OperationType, Map<String, Queue<ProcessedOperation>>> processedOperationQueueMap;
+    private final Map<OperationType, Map<String, Queue<Operation>>> operationsMapQueue;
+
     private final Long readLimitPerMinute;
     private final Long writeLimitPerMinute;
 
@@ -21,22 +24,18 @@ public class _6_UserOperationLimiter {
             @Nonnull Long readLimitPerMinute,
             @Nonnull Long writeLimitPerMinute
     ) {
-        Map<String, Queue<ProcessedOperation>> readOperations = users.stream()
-                .collect(Collectors.toMap(
-                        User::getId,
-                        user -> new ConcurrentLinkedQueue<>()
-                ));
-        Map<String, Queue<ProcessedOperation>> writeOperations = users.stream()
-                .collect(Collectors.toMap(
-                        User::getId,
-                        user -> new ConcurrentLinkedQueue<>()
-                ));
-        this.processedOperationQueueMap = Map.of(
+        this.readLimitPerMinute = readLimitPerMinute;
+        this.writeLimitPerMinute = writeLimitPerMinute;
+
+        Map<String, Queue<Operation>> readOperations = users.stream()
+                .collect(Collectors.toMap(User::getId, user -> new ConcurrentLinkedQueue<>()));
+        Map<String, Queue<Operation>> writeOperations = users.stream()
+                .collect(Collectors.toMap(User::getId, user -> new ConcurrentLinkedQueue<>()));
+
+        this.operationsMapQueue = Map.of(
                 OperationType.READ, readOperations,
                 OperationType.WRITE, writeOperations
         );
-        this.readLimitPerMinute = readLimitPerMinute;
-        this.writeLimitPerMinute = writeLimitPerMinute;
     }
 
     /**
@@ -47,18 +46,12 @@ public class _6_UserOperationLimiter {
      * @return допустимо ли совершать операцию
      */
     public boolean isUserAllowedToPerform(@Nonnull Operation operation) {
-        Queue<ProcessedOperation> queue = processedOperationQueueMap
-                .get(operation.operationType)
-                .get(operation.userId);
-
-        if (queue == null) {
-            throw new IllegalArgumentException("No such user with id: %s".formatted(operation.userId));
-        }
+        Queue<Operation> queue = getQueue(operation);
 
         removeOldOperations(queue);
         int operationCounter = queue.size();
 
-        if (operation.operationType.equals(OperationType.READ)) {
+        if (OperationType.READ.equals(operation.operationType)) {
             return operationCounter < readLimitPerMinute;
         }
 
@@ -67,22 +60,13 @@ public class _6_UserOperationLimiter {
 
     /**
      * Обработать сделанную операцию пользователем
+     *
      * @param operation операция
      */
     public void processPerformedOperation(@Nonnull Operation operation) {
-        Queue<ProcessedOperation> queue = processedOperationQueueMap
-                .get(operation.operationType)
-                .get(operation.getUserId());
-
-        if (queue == null) {
-            throw new IllegalArgumentException("No such user with id: %s".formatted(operation.userId));
-        }
-
-        queue.add(new ProcessedOperation(
-                operation.userId,
-                operation.operationType,
-                getCurrentTimeSeconds()
-        ));
+        Queue<Operation> queue = getQueue(operation);
+        operation.setTime(getCurrentTimeSeconds());
+        queue.add(operation);
     }
 
     /**
@@ -93,12 +77,23 @@ public class _6_UserOperationLimiter {
         return System.currentTimeMillis() / 1000;
     }
 
-    private void removeOldOperations(Queue<ProcessedOperation> processedOperationQueue) {
-        long currentTime = getCurrentTimeSeconds();
-        while (!processedOperationQueue.isEmpty()) {
-            var currentOperation = processedOperationQueue.peek();
-            if (currentOperation.operationTime < currentTime - 60) {
-                processedOperationQueue.poll();
+    private Queue<Operation> getQueue(Operation operation) {
+        Queue<Operation> queue = operationsMapQueue
+                .get(operation.operationType)
+                .get(operation.getUserId());
+
+        if (queue == null) {
+            throw new IllegalArgumentException("No such user with id: " + operation.getUserId());
+        }
+
+        return queue;
+    }
+
+    private void removeOldOperations(Queue<Operation> queue) {
+        Long currentTimeSeconds = getCurrentTimeSeconds();
+        while (!queue.isEmpty()) {
+            if (currentTimeSeconds - queue.peek().getTime() > 60) {
+                queue.poll();
             } else {
                 break;
             }
@@ -106,22 +101,17 @@ public class _6_UserOperationLimiter {
     }
 
     /**
-     * Информация о совершенной операции пользователем
+     * Типы операций пользователя
      */
-    @Data
-    public static class ProcessedOperation {
+    enum OperationType {
         /**
-         * Id, пользователя совершающего операцию
+         * Операция чтения
          */
-        private final String userId;
+        READ,
         /**
-         * Тип операции
+         * Операция записи
          */
-        private final OperationType operationType;
-        /**
-         * Время совершения операции
-         */
-        private final Long operationTime;
+        WRITE
     }
 
     /**
@@ -137,6 +127,11 @@ public class _6_UserOperationLimiter {
          * Тип операции
          */
         private final OperationType operationType;
+
+        /**
+         * Время операции
+         */
+        private Long time;
     }
 
     /**
@@ -152,19 +147,5 @@ public class _6_UserOperationLimiter {
          * Login пользователя
          */
         private final String login;
-    }
-
-    /**
-     * Типы операций пользователя
-     */
-    enum OperationType {
-        /**
-         * Операция чтения
-         */
-        READ,
-        /**
-         * Операция записи
-         */
-        WRITE
     }
 }

@@ -1,9 +1,11 @@
-package leetcode.roadmap._5_tree;
+package leetcode.seanprashad_leetcode_patterns.easy;
+
+import leetcode.roadmap._5_tree.TreeNode;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class _6_111_MinimumDepthOfBinaryTree {
+public class _111_MinimumDepthOfBinaryTree {
     public static void main(String[] args) {
 //        Integer[] nodes = {3,9,20,null,null,15,7};
         Integer[] nodes = {2, null, 3, null, 4, null, 5, null, 6};
